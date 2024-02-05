@@ -1,29 +1,106 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-  
-.main{
+
+.main {
     display: flex;
 }
 
-.logo{
+.logo {
     background: aqua;
-    height: 58rem;
-    width: 70rem;
+    height: 60rem;
+    width: 65%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
-     justify-content: center;
+    justify-content: center;
 }
 
-.login{
+.para{
+    margin-bottom: 2rem;
+    font-weight: bold;
+    padding: 0px 60px 40px;
+    font-size: 2em;
     display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    width: 80%;
+}
+
+
+.details{
+    background-color: #F6F7F8;
+    
+    width: 100%;
+    padding: 10px 50px 20px;
+    margin: 0 0 40px 0;
+}
+
+.details p{
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 10px 0px 30px;
+}
+
+.row-one{
+    display: flex;
+    gap: 15rem;
+}
+
+.form-row{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
     flex-wrap: wrap;
 }
+
+.form-row input {
+  background-color: #FFFFFF;
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+  width: 150%;
+  padding: 9px;
+  font-size: 20px;
+}
+
+.form-row label {
+    color: rgb(48, 45, 45);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.footer{
+    padding: 10px 40px 20px;
+}
+
+.footer p{
+    margin-top: 30px;
+    margin-left: 10px;
+    font-weight: 550;
+}
+
+.footer button {
+    font-size: 17px;
+    font-weight: bold;
+  
+    color: #FFFFFF;
+    background-color: #5995DA;
+  
+    border: none;
+    border-radius: 5px;
+  
+    padding: 15px 40px;
+    cursor: pointer;
+
+    width: 23%;
+    min-width: 150px;
+  }
