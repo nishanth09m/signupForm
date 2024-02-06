@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
     <div class="main">
-        <div class="logo">
-            <h1>ODIN</h1>
+        <div class="left">
+            <div class="logo">
+                <img class="image" src="images/logo2.png" alt="japan">
+                <h1>Japan</h1>
+            </div>
         </div>
         <div class="container">
             <div class="para">
@@ -21,50 +25,55 @@
                 </p>
                 <p>You <em>know</em> you want to.</p>
             </div>
-            <div class="details">
-                <p>Let's do this!</p>
-                <form action="" method="post" class="web-form">
+
+            <form action="" method="post" class="web-form">
+                <div class="details">
+                    <p>Let's do this!</p>
                     <div class="row-one">
                         <div class="form-row">
                             <label for="fname">First Name</label>
                             <input type="text" id="fname" name="fname" required>
                         </div>
-    
+
                         <div class="form-row">
                             <label for="lname">Last Name</label>
                             <input type="text" id="lname" name="lname" required>
                         </div>
                     </div>
-    
+
                     <div class="row-one">
                         <div class="form-row">
                             <label for="email">Email</label>
                             <input type="email" id="email" name="email" required>
                         </div>
-    
+
                         <div class="form-row">
                             <label for="pno">Phone Number</label>
                             <input type="text" id="pno" name="pno" required>
                         </div>
                     </div>
-    
+
                     <div class="row-one">
                         <div class="form-row">
                             <label for="pass">Password</label>
-                            <input type="password" id="pass" name="pass" required>
+                            <input type="password" id="pass" name="pass" onkeyup='passConfirm();' required>
+                            <span id="info"></span>
                         </div>
-    
+
                         <div class="form-row">
                             <label for="cpass">Confirm Password</label>
-                            <input type="password" id="cpass" name="cpass"required>
+                            <input type="password" id="cpass" name="cpass" onkeyup='passConfirm();' required>
                         </div>
                     </div>
-                </form>
-            </div>
-            <div class="footer">
-                <button>Create Account</button>
-                <p>Already have an account? Log in</p>
-            </div>
+                </div>
+
+                <div class="footer">
+                    <button type="submit">Create Account</button>
+                    <p>Already have an account? <a href="#">Log in</a></p>
+                </div>
+            </form>
+
+
         </div>
     </div>
 </body>

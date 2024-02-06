@@ -4,17 +4,52 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: "onsen";
+    src:
+      url("fonts/onsenjapandemoregular-webfont.woff2") format("woff2"),
+      url("fonts/onsenjapandemoregular-webfont.woff2") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+
 .main {
     display: flex;
 }
 
-.logo {
-    background: aqua;
-    height: 60rem;
+.left {
+    height: 100vh;
     width: 65%;
+
+    background: url(images/japan.jpg);
+    background-position: center;
+    background-size: cover; 
+}
+
+.logo{
+    background-color: #5995DA;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    position: relative;
+    top: 130px;
+    background-color: rgba(0, 0, 0, 0.473);
+}
+
+img{
+    height: 180px;
+    width: 180px;
+    max-width: (200px, 100vh);
+    object-fit: cover;
+}
+
+.logo h1{
+    font:
+    6.5em "onsen",
+    monospace; 
+    position: relative;
+    top: 20px;
+    color: #F88379;
 }
 
 .container {
@@ -79,7 +114,7 @@
 }
 
 .footer{
-    padding: 10px 40px 20px;
+    padding: 10px 50px 20px;
 }
 
 .footer p{
@@ -103,4 +138,12 @@
 
     width: 23%;
     min-width: 150px;
+  }
+
+.form-row input:hover{
+    border: 1px solid aqua;
+}
+
+.footer button:hover {
+    background-color: #76AEED;
   }
