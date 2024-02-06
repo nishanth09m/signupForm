@@ -19,7 +19,7 @@
 
 .left {
     height: 100vh;
-    width: 65%;
+    width: 80%;
 
     background: url(images/japan.jpg);
     background-position: center;
@@ -27,13 +27,12 @@
 }
 
 .logo{
-    background-color: #5995DA;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     position: relative;
     top: 130px;
-    background-color: rgba(0, 0, 0, 0.473);
+    background-color: rgba(243, 207, 198, 0.473);
 }
 
 img{
@@ -49,13 +48,14 @@ img{
     monospace; 
     position: relative;
     top: 20px;
-    color: #F88379;
+    color: #F33A6A;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: rgb(224, 17, 95, 0.157);
 }
 
 .para{
@@ -71,7 +71,7 @@ img{
 
 
 .details{
-    background-color: #F6F7F8;
+    background-color: rgb(248, 200, 220, 0.8);
     
     width: 100%;
     padding: 10px 50px 20px;
@@ -119,18 +119,17 @@ img{
 
 .footer p{
     margin-top: 30px;
-    margin-left: 10px;
     font-weight: 550;
 }
 
 .footer button {
-    font-size: 17px;
+    font-size: 20px;
     font-weight: bold;
   
-    color: #FFFFFF;
-    background-color: #5995DA;
+    color: rgb(224, 17, 95, 0.7);
+    background-color: #5995da00;
   
-    border: none;
+    border: 3px solid rgb(224, 17, 95);
     border-radius: 5px;
   
     padding: 15px 40px;
@@ -141,9 +140,9 @@ img{
   }
 
 .form-row input:hover{
-    border: 1px solid aqua;
+    border: 1px solid darkblue;
 }
 
 .footer button:hover {
-    background-color: #76AEED;
+    background-color: rgb(248, 200, 220, 0.5);
   }
